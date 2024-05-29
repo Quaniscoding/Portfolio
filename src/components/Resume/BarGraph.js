@@ -1,6 +1,4 @@
 export default function BarGraph({ name, percent }) {
-  console.log(name);
-  console.log(BarGraph);
   return (
     <div className="flex flex-col">
       <div className="flex flex-row justify-between w-3/4 px-6 text-lg ">

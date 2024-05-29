@@ -1,5 +1,6 @@
 import Work from "./work";
 import { projects } from "../../constants";
+import jiraImg from '../../assets/images/jira-project.png';
 export default function Projects() {
   return (
     <div
@@ -7,7 +8,7 @@ export default function Projects() {
       className="min-h-screen flex flex-col justify-center text-center gap-10"
     >
       <div
-        className="font-extrabold  py-5 mt-10 text-5xl"
+        className="font-extrabold py-5 mt-10 text-5xl"
         data-aos={"slide-up"}
         data-aos-duration={"700"}
       >
@@ -26,7 +27,8 @@ export default function Projects() {
               <Work
                 title={project.title}
                 desc={project.desc}
-                img={project.img}
+                // img={`../${project.img}`}
+                img={`${project.img}`}
                 link={project.link}
                 code={project.code}
                 tags={project.tags}

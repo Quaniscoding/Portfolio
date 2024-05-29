@@ -8,17 +8,15 @@ import { useState } from "react";
 export default function Slidebar() {
   const [select, setSelect] = useState(0);
   return (
-    <div className="flex-none  bg-black h-screen min-w-[25%] fixed ">
-      <div className="nav flex  text-white text-lg mt-10 flex-col align-middle justify-center text-center w-full gap-5 overflow-hidden">
+    <div className="flex-none bg-black h-screen min-w-[25%] fixed">
+      <div className="nav flex text-white text-lg mt-10 flex-col align-middle justify-center text-center w-full gap-5 overflow-hidden">
         <div data-aos="slide-down">
           <img
             src={require("../assets/images/MyImage.png")}
             alt="Daniel Jebarson"
-            className="rounded-full border-solid cursor-pointer  border-[8px] border-stone-600 min-h-fit mx-auto  max-w-[190px]"
+            className="rounded-full border-solid cursor-pointer border-[8px] border-stone-600 min-h-fit mx-auto max-w-[190px]"
           />
-          <h3 className="text-white name py-4 font-medium ">
-            Ngo Van Quan
-          </h3>
+          <h3 className="text-white name py-4 font-medium">Ngo Van Quan</h3>
         </div>
         <p
           onClick={() => setSelect(0)}
@@ -36,7 +34,7 @@ export default function Slidebar() {
           data-aos-delay="600"
           data-aos="slide-left"
         >
-          <a href="#about"> About Me</a>
+          <a href="#about">About Me</a>
         </p>
         <p
           onClick={() => setSelect(2)}

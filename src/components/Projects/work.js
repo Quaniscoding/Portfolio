@@ -1,5 +1,7 @@
+import React from "react";
 import Tilt from "react-parallax-tilt";
-export default function work({ title, desc, tags, link, code, img }) {
+
+export default function Work({ title, desc, tags, link, code, img }) {
   return (
     <Tilt
       options={{
@@ -7,7 +9,7 @@ export default function work({ title, desc, tags, link, code, img }) {
         scale: 1,
         speed: 450,
       }}
-      className="bg-[#0b212d]  rounded-2xl max-w-[362px]  h-full bg-gradient-to-r from-green-700 to-pink-800 p-[1px]"
+      className="bg-[#0b212d] rounded-2xl max-w-[362px] h-full bg-gradient-to-r from-green-700 to-pink-800 p-[1px]"
     >
       <div className="bg-[#0b212d] w-full h-full rounded-2xl p-4 flex flex-col justify-between">
         <div>
@@ -18,16 +20,18 @@ export default function work({ title, desc, tags, link, code, img }) {
               className="w-full h-full max-h-[200px] min-h-[200px] rounded-[10px] object-cover border-[1px] border-secondary"
             />
             <div className="absolute inset-0 flex justify-end m-3 ">
-              <div
-                onClick={() => window.open(link, "_blank")}
-                className="bg-slate-800 w-9 h-9 rounded-full border-[1px] border-secondary flex items-center justify-center cursor-pointer mr-2"
-              >
-                <img
-                  src={require("../../assets/images/gotosite.webp")}
-                  alt={"gotosite"}
-                  className="w-4/5 h-4/5 object-contain"
-                />
-              </div>
+              {link && (
+                <div
+                  onClick={() => window.open(link, "_blank")}
+                  className="bg-slate-800 w-9 h-9 rounded-full border-[1px] border-secondary flex items-center justify-center cursor-pointer mr-2"
+                >
+                  <img
+                    src={require("../../assets/images/gotosite.webp")}
+                    alt={"gotosite"}
+                    className="w-4/5 h-4/5 object-contain"
+                  />
+                </div>
+              )}
               <div
                 onClick={() => window.open(code, "_blank")}
                 className="bg-slate-800 w-9 h-9 rounded-full border-[1px] border-secondary flex items-center justify-center cursor-pointer "
