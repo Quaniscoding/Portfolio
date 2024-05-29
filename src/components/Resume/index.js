@@ -1,14 +1,14 @@
 import BarGraph from "./BarGraph";
 import DownloadIcon from "@mui/icons-material/Download";
-
+import './resume.css'
 export default function Resume() {
   return (
-    <div id="resume" className="xl:min-h-screen h-[1200px] flex-col text-center">
+    <div id="resume" className="xl:min-h-screen xl:h-[1000px] h-[1600px] flex-col text-center">
       <div className="text-5xl font-bold py-8" data-aos={"slide-down"}>
         Resume
       </div>
-      <div className="ld:grid ld:grid-cols-2 ld:gap-7 mt-7 flex flex-col">
-        <ol class="relative ld:border-l  border-gray-700 ld:ml-9 ml-5 mb-6">
+      <div className="lg:grid lg:grid-cols-2 lg:gap-7 mt-7 flex flex-col">
+        <ol class="relative lg:border-l  border-gray-700 lg:ml-9 ml-5 mb-6">
           <li class="mb-10" data-aos="zoom-in">
             <span class="absolute flex items-center justify-center w-6 h-6   rounded-full -left-3 ring-8  ring-gray-900 bg-blue-900">
               <svg
@@ -106,8 +106,8 @@ export default function Resume() {
         </ol>
 
         <div className="flex flex-col text-center" data-aos="slide-up">
-          <div className="text-3xl font-bold py-3">My Skills</div>
-          <div className="flex flex-col gap-8 mt-6 lg:ml-16 ml-28 ">
+          <div className="text-3xl font-bold pb-3">My Skills</div>
+          <div id="skillbar" className="flex flex-col gap-8 mt-6 xl:ml-16 lg:ml-24 mx-3">
             <BarGraph name={"JavaScript"} percent={80} />
             <BarGraph name={"React"} percent={75} />
             <BarGraph name={"HTML/CSS"} percent={90} />

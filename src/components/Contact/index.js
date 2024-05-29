@@ -69,7 +69,7 @@ export default function Contact() {
   return (
     <div
       id="contact"
-      className="flex text-center flex-col gap-12 mt-10 min-h-screen overflow-hidden"
+      className="flex text-center flex-col gap-12 lg:mt-28 xl:min-h-screen h-[1000px] overflow-hidden"
     >
       <div class="text-5xl font-bold aos-init aos-animate" data-aos="fade">Contact</div>
       <div className="flex lg:flex-row flex-col">
