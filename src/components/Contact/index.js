@@ -7,7 +7,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import CopyrightIcon from "@mui/icons-material/Copyright";
 import emailjs from "emailjs-com";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useRef, useState } from "react";
 
@@ -109,6 +109,7 @@ export default function Contact() {
             </div>
             <textarea
               id="message"
+              name="message"
               rows="4"
               value={form.message}
               onChange={handleChange}
